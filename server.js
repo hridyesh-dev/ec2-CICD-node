@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use("/home", (req,res) => {
     res.json({
-        msg: " Hi Im from express app .  "
+        msg: " Hi Im from express app . After github CICD integration "
     })
 })
 
