@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use("/home", (req,res) => {
     res.json({
-        msg:"Hi Im from express app-- after github ci cd pipeline"
+        msg: " Hi Im from express app .  "
     })
 })
 
@@ -32,6 +32,6 @@ mongoose.connect("mongodb+srv://sachin:02112003@mycluster.vpmrumy.mongodb.net/cr
     app.listen(PORT,()=>console.log(`server is running on port ${PORT}`))
 })
 .catch((err)=>{
-   console.log(err.message);
+    console.log(err.message);
 })
 

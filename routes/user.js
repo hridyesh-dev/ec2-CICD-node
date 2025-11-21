@@ -2,6 +2,7 @@ const express = require("express");
 const User = require("../model/user");
 const router = express.Router();
 const isEmail = require("validator/lib/isEmail");
+
 router.get("/", async (req, res) => {
     try {
         const users = await User.find({});
@@ -34,7 +35,7 @@ router.post("/", async (req, res) => {
 })
 
 router.put("/:id", async (req, res) => {
-    try {
+    try{
         const user = await User.findById(req.params.id);
         if (!user) {
             return res.status(400).send("user doesn't exist");
@@ -51,13 +52,12 @@ router.put("/:id", async (req, res) => {
         else {
             return res.status(400).send("Invalid user data");
         }
-
     } catch (error) {
         console.log(error);
         return res.status(500).send("Server Error");
     }
-
 });
+
 
 router.delete("/:id", async (req, res) => {
     try {

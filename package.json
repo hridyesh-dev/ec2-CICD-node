@@ -19,5 +19,13 @@
     "nodemailer-sendgrid-transport": "^0.2.0",
     "nodemon": "^2.0.20",
     "validator": "^13.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bhanupratap02/my-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bhanupratap02/my-api/issues"
+  },
+  "homepage": "https://github.com/Bhanupratap02/my-api#readme"
 }
